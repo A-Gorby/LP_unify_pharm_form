@@ -59,7 +59,7 @@ def read_df(data_source_dir, fn, sheet_name):
         try: 
             df_lp = pd.read_excel(os.path.join(data_source_dir, fn), sheet_name=sheet_name)
             display(df_lp.head(2))
-            logger.info(f"Входной файл сожержит {df_lp.shape[0]} позиций")
+            logger.info(f"Входной файл содержит {df_lp.shape[0]} позиций")
         except Exception as err:
             logger.error(f"{str}")
             sys.exit(2)
